@@ -22,5 +22,5 @@ class linkapi(models.Model):
     deksripsi_link = models.TextField()
     date_create = models.DateField(auto_now=True)
 
-    def __str__(self):
-        return self.link_web.nama
+    def get_link_url(self):
+        return f"{self.link_web.nama}/{self.urlapi}"
