@@ -33,4 +33,8 @@
     - Menambahkan Model website, dan link URL [Solved]
     - Memperbaiki Halaman backend untuk Model website dan link url [Solved]
 
+  * Senin 21 Oktober 2019
+    - Menambahkan Template [Solved]
+    - Menambahkan Authentikasi untuk Login & Logout [Solved]
+
     
