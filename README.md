@@ -36,5 +36,8 @@
   * Senin 21 Oktober 2019
     - Menambahkan Template [Solved]
     - Menambahkan Authentikasi untuk Login & Logout [Solved]
+  
+  * Sabtu 26 Oktober 2019
+    - Menambahkan Class View untuk Model website [Solved]
 
     

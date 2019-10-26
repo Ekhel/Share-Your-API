@@ -124,7 +124,7 @@
                                 
                                 <div class="nav-lavel">DATA</div>
                                 <div class="nav-item">
-                                    <a href="#"><i class="ik ik-globe"></i><span>Websites</span></a>
+                                    <a href="{% url 'webview' %}"><i class="ik ik-globe"></i><span>Websites</span></a>
                                 </div>
                                 <div class="nav-item">
                                     <a href="#"><i class="ik ik-menu"></i><span>Websites API</span></a>
@@ -205,9 +205,8 @@
                 </div>
                 <div class="main-content">
                     <div class="container-fluid">
-                        <div class="row clearfix">
-                            {% block content %}
-                        </div>
+                        {% block content %}
+                        
                     </div>
                 </div>
 
