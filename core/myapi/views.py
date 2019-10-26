@@ -12,6 +12,11 @@ class WebView(ListView):
     model = website
     template_name = 'app/r-web.html'
 
+class ApiView(ListView):
+    model = linkapi
+    template_name = 'app/r-api.html'
+        
+
 @login_required
 def dashboard(request):
     return render(request, 'app/dashboard.html')

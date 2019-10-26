@@ -2,15 +2,14 @@
 
 {% block content %}
 
-
 <div class="page-header">
     <div class="row align-items-end">
         <div class="col-lg-8">
             <div class="page-header-title">
                 <i class="ik ik-inbox bg-blue"></i>
                 <div class="d-inline">
-                    <h5>Website</h5>
-                    <span>Daftar WEB yang memiliki Link API</span>
+                    <h5>API</h5>
+                    <span>Daftar Link API<span>
                 </div>
             </div>
         </div>
@@ -23,7 +22,7 @@
                     <li class="breadcrumb-item">
                         <a href="#">Website</a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Data Table</li>
+                    <li class="breadcrumb-item active" aria-current="page">Data API</li>
                 </ol>
             </nav>
         </div>
@@ -33,28 +32,36 @@
 <div class="row">
     <div class="col-md-12">
         <div class="card">
-            <div class="card-header"><h3>Data Table</h3></div>
+            <div class="card-header">
+                
+                <span class="center"><a href="#" class="btn btn-outline-primary" title="Tambah URL" type="button"><i class="ik ik-plus-circle"></i></a></span>
+            </div>
             <div class="card-body">
                 <table id="order-table" class="table table-striped table-bordered">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Nama</th>
-                            <th>Link</th>
+                            <th>User</th>                 
+                            <th>Websites</th>
+                            <th>API Endpoint</th>
                             <th>Deskripsi</th>
+                            <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for items in object_list %}
                         <tr>
-                            <td>{{ items.id_web }}</td>
-                            <td>{{ items.nama }}</td>
-                            <td>{{ items.link }}</td>
-                            <td>{{ items.deskripsi }}</td>
+                            <td>{{ items.user }}</td>                        
+                            <td>{{ items.link_web }}</td>
+                            <td>{{ items.get_link_url }}</td>
+                            <td>{{ items.deksripsi_link }} </td>
+                            <td>
+                                <a href="#" class="small btn btn-info" title="Edit Data"><i class="ik ik-edit"></i></a>
+                                <a href="#" class="small btn btn-danger" title="Hapus Data"><i class="ik ik-trash"></i></a>
+                            </td>
                         </tr>
                         {% endfor %}
                     </tbody>
-                </table>            
+                </table>
             </div>
         </div>
     </div>

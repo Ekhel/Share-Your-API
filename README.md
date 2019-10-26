@@ -39,5 +39,6 @@
   
   * Sabtu 26 Oktober 2019
     - Menambahkan Class View untuk Model website [Solved]
+    - Memperbaiki View Data Website dan Url API [Solved]
 
     

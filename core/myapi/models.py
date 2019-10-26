@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.shortcuts import reverse
 
 class website(models.Model):
     id_web = models.AutoField(primary_key=True)
@@ -23,4 +24,4 @@ class linkapi(models.Model):
     date_create = models.DateField(auto_now=True)
 
     def get_link_url(self):
-        return f"{self.link_web.nama}/{self.urlapi}"
+        return f"{self.link_web.link}/{self.urlapi}"

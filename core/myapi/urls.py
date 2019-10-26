@@ -4,6 +4,7 @@ from django.contrib.auth import views as auth_views
 from . import views
 from . views import (
     WebView,
+    ApiView,
 )
 
 
@@ -13,4 +14,5 @@ urlpatterns = [
     path('logout', auth_views.LogoutView.as_view(), name='logout'),
     path('dashboard', views.dashboard, name='dashboard'),
     path('webview', WebView.as_view(), name='webview'),
+    path('apiview', ApiView.as_view(), name='apiview'),
 ]
