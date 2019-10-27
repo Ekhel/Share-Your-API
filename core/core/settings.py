@@ -129,3 +129,6 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = '/dashboard'
 LOGIN_URL = '/login'
 LOGOUT_REDIRECT_URL = '/login'
+
+ADMIN_SITE_HEADER = "Share API"
+ADMIN_SITE_INDEX = "Share API Backend Administrator"

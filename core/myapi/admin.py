@@ -3,9 +3,9 @@ from .models import website, linkapi
 
 
 class PageWeb(admin.ModelAdmin):
-    list_display = ('id_web','nama','link','deskripsi','date_created')
-    list_display_links = ('id_web','nama','link','deskripsi','date_created')
-    search_fields = ('id_web','nama','link','deskripsi','date_created')
+    list_display = ('id_web','nama','link','user','deskripsi','date_created')
+    list_display_links = ('id_web','nama','link','user','deskripsi','date_created')
+    search_fields = ('id_web','nama','link','user','deskripsi','date_created')
     list_per_page = 10
 
 class PageApi(admin.ModelAdmin):

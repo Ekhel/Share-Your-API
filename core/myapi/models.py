@@ -6,6 +6,7 @@ class website(models.Model):
     id_web = models.AutoField(primary_key=True)
     nama = models.CharField(max_length=200)
     link = models.CharField(max_length=250, blank=True, null=True)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, blank=True, default=True)
     deskripsi = models.TextField()
     date_created = models.DateTimeField(auto_now=True)
 

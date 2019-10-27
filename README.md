@@ -41,4 +41,8 @@
     - Menambahkan Class View untuk Model website [Solved]
     - Memperbaiki View Data Website dan Url API [Solved]
 
+  * Minggu 27 Oktober 2019
+    - Menambahkan Method Login Required dan Permission Mixin [Solved]
+    - Mengatur Retrive Data View dari Masing" User Session [Solved] 
+
     
